@@ -1,2 +1,2 @@
-# climate-compare
-The JavaScript (React/Node) Technical Assessment's base repository, detailing the creation of the "Climate Compare" app
+# music-dashboard
+The Responsive Design Technical Assessment's base respository, detailing the creation of the "Music Dashboard" (i.e. YouTube Music clone) app
