@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions | Music Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+      :root {
+        --primary: #ff004c;
+      }
+
+      body {
+        font-family: "Plus Jakarta Sans", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--primary);
+        margin: 0;
+      }
+
+      section#note {
+        background-color: #ffffff;
+        margin: 0 10vw;
+        padding: 1rem 2rem;
+      }
+
+      section#note > section {
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        border-left: 5px solid #ccc;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ol,
+      ul {
+        line-height: 1.5;
+      }
+
+      li {
+        margin: 1rem 0;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: var(--primary);
+        border-bottom: 2px solid var(--primary);
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        border-bottom: 1px solid black;
+      }
+
+      h3 {
+        color: var(--primary);
+      }
+
+      span.label {
+        background-color: var(--primary);
+        padding: 0 10px;
+        color: white;
+        margin-right: 0.5rem;
+        font-weight: bold;
+      }
+
+      span.important-tag {
+        background-color: #ff0000;
+        padding: 0 10px;
+        color: white;
+        font-weight: bold;
+      }
+
+      p.important-tag {
+        background-color: #ff0000;
+        padding: 0 10px;
+        color: white;
+        font-weight: bold;
+      }
+
+      span.important {
+        color: #ff0000;
+        font-weight: bold;
+      }
+
+      div#image-container img {
+        border-radius: 0.5rem;
+      }
+
+      code,
+      pre {
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #ccc;
+        padding: 0 5px;
+      }
+
+      p.muted {
+        color: #777;
+        margin-top: 5px;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        section#note {
+          margin: 0;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+
+  <body>
+    <section id="note">
+      <header>
+        <h1>Instructions for Responsive Design Technical Assessment</h1>
+        <p>
+          <span class="label">Goal</span>Make a simple YouTube Music clone using
+          React & TypeScript
+        </p>
+        <p>
+          <span class="label">Score</span>Out of 100 - for code quality,
+          frontend design and responsiveness.
+        </p>
+        <p><span class="label">Maximum Time</span>3 hours</p>
+        <div id="image-container">
+          <img
+            src="./images/large-yt-music.png"
+            alt="ClimateCompare dashboard without data"
+            width="1000"
+          />
+          <img
+            src="./images/small-yt-music.png"
+            alt="ClimateCompare dashboard with data"
+            height="600"
+          />
+        </div>
+      </header>
+
+      <section>
+        <h2>Project Details</h2>
+        <h3>Description</h3>
+        <ul>
+          <li>
+            You're tasked with building a simple YouTube Music clone using React
+            & TypeScript.
+          </li>
+          <li>
+            The app should be responsive and work on all devices. Use the above
+            images (desktop left, mobile right) for reference.
+          </li>
+          <li>
+            <b>No functionality</b> is expected of the app - the main goal of
+            this task is to flex on your responsive design skills - basically
+            making sure the app looks good on all devices.
+          </li>
+          <li>
+            Feel free to use <b>dummy data and images</b> when building your
+            clone of the above interface.
+          </li>
+          <li>
+            You are free to use any additional frameworks or libraries
+            <i>(you may have to use icon libraries)</i>, but ensure that you use
+            React as your only JavaScript framework + TypeScript as your
+            scripting language.
+          </li>
+        </ul>
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>
+            <span class="label">Languages</span>TypeScript (.tsx) and CSS w/
+            libaries / frameworks of your choice
+          </li>
+          <li>
+            <span class="label">Frontend</span>React w/ Vite as the build tool.
+          </li>
+          <li>
+            <span class="label">Version Control</span>Git and Github is used to
+            host this project's respository and for submitting your work.
+          </li>
+          <li>
+            Since this assessment will primarily use Git & GitHub, you will need
+            <b>a GitHub account</b> and some experience working with the Git
+            CLI.
+          </li>
+        </ul>
+      </section>
+      <p class="important-tag">
+        Congratulations on completing this assessment! You may now submit a pull
+        request (ensuring that all local changes have been pushed) to the main
+        repository from your forked repository to confirm your submission.
+      </p>
+      <p class="important-tag">
+        Make sure to include your name in the pull request message, along with a
+        README.md if you wish to explain / comment on any of the solutions for
+        the above.
+      </p>
+    </section>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
